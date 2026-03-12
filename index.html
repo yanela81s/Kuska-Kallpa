@@ -1,100 +1,82 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kuska Kallpa</title>
 
-<title>Kuska Kallpa</title>
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-<script src="https://cdn.tailwindcss.com"></script>
+  <!-- Iconos -->
+  <script src="https://unpkg.com/lucide@latest"></script>
 
-<style>
-
-html{
-scroll-behavior:smooth;
-}
-
-.hero{
-background: linear-gradient(120deg,#22c55e,#15803d);
-}
-
-</style>
-
+  <style>
+    html{scroll-behavior:smooth}
+    .hero{
+      background: linear-gradient(120deg,#22c55e,#15803d);
+    }
+  </style>
 </head>
 
 <body class="bg-gray-50">
 
 <!-- HEADER -->
-
 <header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
+  <div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
 
-<div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
+    <div class="flex items-center gap-3">
+      <img src="logo.webp" class="h-10">
+      <span class="font-bold text-green-700 text-lg">Kuska Kallpa</span>
+    </div>
 
-<div class="flex items-center gap-3">
+    <nav class="space-x-6 text-sm font-semibold">
+      <a href="#inicio" class="hover:text-green-600">Inicio</a>
+      <a href="#nosotros" class="hover:text-green-600">Nosotros</a>
+      <a href="#programas" class="hover:text-green-600">Programas</a>
+      <a href="#contacto" class="hover:text-green-600">Contacto</a>
+    </nav>
 
-<img src="logo.webp" class="h-10">
-
-<span class="font-bold text-green-700 text-lg">
-Kuska Kallpa
-</span>
-
-</div>
-
-<nav class="space-x-6 text-sm font-semibold">
-
-<a href="#inicio" class="hover:text-green-600">Inicio</a>
-<a href="#nosotros" class="hover:text-green-600">Nosotros</a>
-<a href="#programas" class="hover:text-green-600">Programas</a>
-<a href="#contacto" class="hover:text-green-600">Contacto</a>
-
-</nav>
-
-</div>
-
+  </div>
 </header>
 
 <!-- HERO -->
-
 <section id="inicio" class="hero text-white pt-32 pb-24 text-center">
 
-<h1 class="text-4xl md:text-5xl font-bold mb-6">
-Kuska Kallpa
-</h1>
+  <h1 class="text-4xl md:text-5xl font-bold mb-6">
+    Kuska Kallpa
+  </h1>
 
-<p class="max-w-2xl mx-auto text-lg">
-Organización juvenil dedicada a impulsar educación, cultura y proyectos
-de impacto social para jóvenes.
-</p>
+  <p class="max-w-2xl mx-auto text-lg">
+    Organización juvenil dedicada a impulsar educación,
+    cultura y proyectos de impacto social para jóvenes.
+  </p>
 
-<div class="mt-8">
-
-<a href="#contacto" class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
-Únete como voluntario
-</a>
-
-</div>
+  <div class="mt-8">
+    <a href="#contacto"
+       class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+       Únete como voluntario
+    </a>
+  </div>
 
 </section>
 
 <!-- NOSOTROS -->
-
 <section id="nosotros" class="py-20 max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-10">
-Nosotros
-</h2>
+  <h2 class="text-3xl font-bold text-center mb-10">
+    Nosotros
+  </h2>
 
-<p class="text-center max-w-3xl mx-auto text-gray-700">
-Kuska Kallpa es una organización juvenil que busca fortalecer el
-liderazgo, la educación y la participación social de los jóvenes a
-través de proyectos académicos, culturales y comunitarios.
-</p>
+  <p class="text-center max-w-3xl mx-auto text-gray-700">
+    Kuska Kallpa es una organización juvenil que busca fortalecer
+    el liderazgo, la educación y la participación social de los jóvenes
+    mediante proyectos académicos, culturales y comunitarios.
+  </p>
 
 </section>
 
 <!-- PROGRAMAS -->
-
 <section id="programas" class="bg-gray-100 py-20">
 
 <div class="max-w-6xl mx-auto px-6">
@@ -106,74 +88,64 @@ Programas
 <div class="grid md:grid-cols-3 gap-8">
 
 <div class="bg-white p-6 rounded-xl shadow">
-
-<h3 class="font-bold text-lg mb-2">
-Área Académica
-</h3>
-
+<h3 class="font-bold text-lg mb-2">Área Académica</h3>
 <p class="text-gray-600">
-Impulsamos formación en STEM, letras, arte y cultura mediante
-talleres y mentorías.
+Formación en STEM, letras, arte y cultura mediante talleres
+y mentorías para jóvenes.
 </p>
-
 </div>
 
 <div class="bg-white p-6 rounded-xl shadow">
-
-<h3 class="font-bold text-lg mb-2">
-Proyectos Sociales
-</h3>
-
+<h3 class="font-bold text-lg mb-2">Proyectos Sociales</h3>
 <p class="text-gray-600">
-Desarrollamos iniciativas que generan impacto positivo
-en comunidades.
+Iniciativas que generan impacto positivo en comunidades
+y fomentan el liderazgo juvenil.
 </p>
-
 </div>
 
 <div class="bg-white p-6 rounded-xl shadow">
-
-<h3 class="font-bold text-lg mb-2">
-Comunicaciones
-</h3>
-
+<h3 class="font-bold text-lg mb-2">Comunicaciones</h3>
 <p class="text-gray-600">
-Difundimos conocimiento, cultura y oportunidades
-para jóvenes.
+Difusión de conocimiento, cultura y oportunidades
+para estudiantes y jóvenes profesionales.
 </p>
-
 </div>
 
 </div>
-
 </div>
-
 </section>
 
 <!-- CONTACTO -->
-
 <section id="contacto" class="py-20 max-w-5xl mx-auto px-6 text-center">
 
 <h2 class="text-3xl font-bold mb-6">
-Contacto
+Síguenos en nuestras redes
 </h2>
 
-<p class="mb-8 text-gray-600">
-Síguenos en nuestras redes sociales
+<p class="text-gray-600 mb-10">
+Mantente conectado con nuestras actividades y proyectos.
 </p>
 
-<div class="flex justify-center gap-6 text-lg">
+<div class="flex justify-center gap-8">
 
-<a href="https://instagram.com" target="_blank" class="hover:text-green-600">
-Instagram
+<a href="https://www.instagram.com/kuska.kallpa/" target="_blank"
+class="flex flex-col items-center text-gray-700 hover:text-pink-600">
+<i data-lucide="instagram" class="w-10 h-10"></i>
+<span class="text-sm mt-2">Instagram</span>
 </a>
 
-<a href="https://facebook.com" target="_blank" class="hover:text-green-600">
-Facebook
+<a href="https://www.facebook.com/profile.php?id=61587159247164"
+target="_blank"
+class="flex flex-col items-center text-gray-700 hover:text-blue-600">
+<i data-lucide="facebook" class="w-10 h-10"></i>
+<span class="text-sm mt-2">Facebook</span>
 </a>
 
-<a href="https://linkedin.com" target="_blank" class="hover:text-green-600">
-LinkedIn
+<a href="https://whatsapp.com/channel/0029Vb7qZnQ2Jl8Mq872qK2E"
+target="_blank"
+class="flex flex-col items-center text-gray-700 hover:text-green-600">
+<i data-lucide="message-circle" class="w-10 h-10"></i>
+<span class="text-sm mt-2">WhatsApp</span>
 </a>
 
 </div>
@@ -181,7 +153,6 @@ LinkedIn
 </section>
 
 <!-- FOOTER -->
-
 <footer class="bg-gray-900 text-white text-center py-6">
 
 <p>
@@ -190,6 +161,9 @@ LinkedIn
 
 </footer>
 
-</body>
+<script>
+lucide.createIcons();
+</script>
 
+</body>
 </html>
