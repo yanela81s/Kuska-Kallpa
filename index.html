@@ -1,279 +1,267 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kuska Kallpa | Unión y Fuerza por el Perú</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        pastelBlue: '#AEC6CF',
-                        softBlue: '#D1E8F0',
-                        darkGrey: '#333333',
-                        lightGrey: '#F8F8F8',
-                        accentBlue: '#8FAADC',
-                    },
-                    fontFamily: {
-                        sans: ['Roboto', 'sans-serif'],
-                        display: ['Montserrat', 'sans-serif'],
-                    },
-                    animation: {
-                        'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
-                        'float': 'float 3s ease-in-out infinite',
-                    },
-                    keyframes: {
-                        fadeInUp: {
-                            '0%': { opacity: '0', transform: 'translateY(20px)' },
-                            '100%': { opacity: '1', transform: 'translateY(0)' },
-                        },
-                        float: {
-                            '0%, 100%': { transform: 'translateY(0)' },
-                            '50%': { transform: 'translateY(-10px)' },
-                        }
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        .glass-card {
-            background: rgba(255, 255, 255, 0.8);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-        }
-        .hero-gradient {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
-        }
-        .section-curve {
-            clip-path: ellipse(150% 100% at 50% 100%);
-        }
-        body {
-            background-color: #F8F8F8;
-            color: #333333;
-            overflow-x: hidden;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kuska Kallpa | Fuerza de la Unidad</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+body{
+font-family:'Plus Jakarta Sans',sans-serif;
+background:#f0f9ff;
+}
+
+h1,h2,h3{
+font-family:'Outfit',sans-serif;
+}
+
+.glass-header{
+background:rgba(255,255,255,0.9);
+backdrop-filter:blur(10px);
+}
+
+.hero-overlay{
+background:linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.6));
+}
+
+</style>
 </head>
-<body class="antialiased">
 
-    <!-- Header -->
-    <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <div class="h-12 md:h-16 flex items-center">
-                <img src='https://opal.google/board/blobs/eeff9783-0758-4871-9188-bb113326f132' alt='Kuska Kallpa Logo' class="h-full w-auto object-contain hover:scale-105 transition-transform duration-300" />
-            </div>
-            <div class="hidden md:block">
-                <span class="text-pastelBlue font-display font-semibold text-sm tracking-widest uppercase">Unión • Fuerza • Compromiso</span>
-            </div>
-        </div>
-    </header>
+<body class="text-slate-800">
 
-    <!-- Hero Section -->
-    <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
-        <!-- Hero Image Background -->
-        <div class="absolute inset-0 z-0">
-            <img src='https://opal.google/board/blobs/7f1f9329-5af8-471b-b223-16d10a94f8a1' alt='Hero Unity' class="w-full h-full object-cover" />
-            <div class="absolute inset-0 hero-gradient"></div>
-        </div>
+<!-- HEADER -->
 
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-4xl px-6 text-center animate-fade-in-up">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white leading-tight mb-8 drop-shadow-lg">
-                ¡Bienvenidos!
-            </h1>
-            <p class="text-xl md:text-3xl font-light text-white/95 leading-relaxed mb-10 max-w-3xl mx-auto drop-shadow-md">
-                En <span class="font-bold text-softBlue">Kuska Kallpa</span> estamos comprometidos con apoyar a los niños y jóvenes peruanos. 
-                <br class="hidden md:block" /> 
-                <span class="italic">Con unión y fuerza podemos lograrlo 🌼🤝🏻</span>
-            </p>
-            <div class="flex justify-center animate-float">
-                <a href="#contenido" class="bg-pastelBlue hover:bg-accentBlue text-white px-8 py-4 rounded-full font-display font-bold transition-all duration-300 shadow-xl hover:shadow-2xl">
-                    Conoce Más
-                </a>
-            </div>
-        </div>
-        
-        <!-- Subtle bottom curve -->
-        <div class="absolute bottom-0 left-0 right-0 h-24 bg-lightGrey section-curve"></div>
-    </section>
+<header class="fixed top-0 left-0 right-0 z-50 glass-header border-b">
 
-    <!-- Main Content Area -->
-    <main id="contenido" class="relative z-20 py-20 px-6 bg-lightGrey">
-        <div class="max-w-5xl mx-auto">
-            
-            <!-- Intro Text (Mission) -->
-            <div class="mb-24 grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
-                <div class="md:col-span-7">
-                    <h2 class="text-pastelBlue font-display font-bold text-lg tracking-widest uppercase mb-4">Nuestra Misión</h2>
-                    <h3 class="text-3xl md:text-4xl font-display font-bold text-darkGrey mb-6 leading-snug">
-                        Transformando vidas con el corazón
-                    </h3>
-                    <p class="text-lg text-darkGrey/80 leading-relaxed mb-6">
-                        En Kuska Kallpa, trabajamos con el corazón para transformar la vida de los niños y jóvenes en el Perú. Nuestra misión es empoderar a las nuevas generaciones brindándoles las herramientas, el acompañamiento y las oportunidades necesarias para que descubran su propio potencial.
-                    </p>
-                    <p class="text-lg text-darkGrey/80 leading-relaxed italic border-l-4 border-pastelBlue pl-6">
-                        Creemos firmemente que el desarrollo de un país comienza con el bienestar de su juventud.
-                    </p>
-                </div>
-                <div class="md:col-span-5 bg-white p-8 rounded-3xl shadow-xl glass-card rotate-1 hover:rotate-0 transition-transform duration-500">
-                    <h2 class="text-pastelBlue font-display font-bold text-lg tracking-widest uppercase mb-4">¿Quiénes Somos?</h2>
-                    <p class="text-darkGrey/80 leading-relaxed">
-                        Somos una organización dedicada a fomentar el crecimiento integral a través de la unidad. <strong>"Kuska Kallpa"</strong> refleja nuestra esencia: la convicción de que solo a través de la unión y el esfuerzo conjunto podemos construir un futuro sólido y lleno de esperanza para los peruanos más jóvenes.
-                    </p>
-                </div>
-            </div>
+<div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
 
-            <!-- Pillars - Bento Grid Style -->
-            <div class="mb-24">
-                <div class="text-center mb-16">
-                    <h2 class="text-pastelBlue font-display font-bold text-lg tracking-widest uppercase mb-4">Nuestros Pilares</h2>
-                    <div class="h-1 w-20 bg-pastelBlue mx-auto rounded-full"></div>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Unidad -->
-                    <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-pastelBlue/10 group">
-                        <div class="w-16 h-16 bg-softBlue/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-3xl">🤝🏻</span>
-                        </div>
-                        <h4 class="text-2xl font-display font-bold text-darkGrey mb-4">Unidad</h4>
-                        <p class="text-darkGrey/70 leading-relaxed">
-                            Creemos en el trabajo en equipo y en la colaboración comunitaria como motores de cambio.
-                        </p>
-                    </div>
+<div class="flex items-center space-x-3">
 
-                    <!-- Fortaleza -->
-                    <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-pastelBlue/10 group md:-mt-4 md:mb-4">
-                        <div class="w-16 h-16 bg-softBlue/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-3xl">💪🏼</span>
-                        </div>
-                        <h4 class="text-2xl font-display font-bold text-darkGrey mb-4">Fortaleza (Kallpa)</h4>
-                        <p class="text-darkGrey/70 leading-relaxed">
-                            Impulsamos el carácter y la resiliencia en cada joven para que enfrenten los retos con determinación.
-                        </p>
-                    </div>
+<div class="w-12 h-12 rounded-full bg-white overflow-hidden shadow">
 
-                    <!-- Compromiso -->
-                    <div class="bg-white p-10 rounded-[2rem] shadow-sm hover:shadow-xl transition-all duration-300 border border-pastelBlue/10 group">
-                        <div class="w-16 h-16 bg-softBlue/30 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                            <span class="text-3xl">❤️</span>
-                        </div>
-                        <h4 class="text-2xl font-display font-bold text-darkGrey mb-4">Compromiso</h4>
-                        <p class="text-darkGrey/70 leading-relaxed">
-                            Nuestra dedicación por ver un Perú con igualdad de oportunidades es inquebrantable.
-                        </p>
-                    </div>
-                </div>
-            </div>
+<img src="https://via.placeholder.com/100" alt="logo">
 
-            <!-- Impact Section -->
-            <div class="bg-darkGrey text-white rounded-[3rem] p-8 md:p-16 mb-24 overflow-hidden relative">
-                <div class="absolute top-0 right-0 w-64 h-64 bg-pastelBlue/10 rounded-full -mr-32 -mt-32 blur-3xl"></div>
-                <div class="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <div>
-                        <h2 class="text-pastelBlue font-display font-bold text-lg tracking-widest uppercase mb-4">Nuestro Impacto</h2>
-                        <h3 class="text-3xl md:text-4xl font-display font-bold mb-6">Construyendo puentes hacia el éxito</h3>
-                        <p class="text-white/80 text-lg leading-relaxed mb-8">
-                            A través de programas educativos, talleres de liderazgo y apoyo socioemocional, creamos espacios donde cada niño se siente valorado y cada joven se siente capaz. No solo brindamos apoyo; construimos puentes.
-                        </p>
-                    </div>
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
-                            <div class="text-4xl font-bold text-pastelBlue mb-2">+Impacto</div>
-                            <div class="text-sm uppercase tracking-wide text-white/60">Social</div>
-                        </div>
-                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center">
-                            <div class="text-4xl font-bold text-pastelBlue mb-2">+Unión</div>
-                            <div class="text-sm uppercase tracking-wide text-white/60">Fuerza</div>
-                        </div>
-                        <div class="bg-white/5 backdrop-blur-sm p-6 rounded-2xl border border-white/10 text-center col-span-2">
-                            <div class="text-4xl font-bold text-pastelBlue mb-2">Perú</div>
-                            <div class="text-sm uppercase tracking-wide text-white/60">Igualdad de Oportunidades</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+</div>
 
-            <!-- CTA Section -->
-            <div class="text-center max-w-3xl mx-auto mb-20">
-                <h2 class="text-3xl md:text-5xl font-display font-bold text-darkGrey mb-6">Sé Parte del Cambio</h2>
-                <p class="text-xl text-darkGrey/70 leading-relaxed mb-10">
-                    El futuro del Perú nos pertenece a todos. Te invitamos a sumarte a nuestra causa y ser parte de esta gran cadena de fuerza y solidaridad.
-                </p>
-                <div class="p-8 rounded-3xl bg-pastelBlue/10 border-2 border-dashed border-pastelBlue/30">
-                    <p class="text-xl font-display font-bold text-pastelBlue mb-0">
-                        Porque cuando nos unimos por nuestra infancia, no hay meta que no podamos alcanzar.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </main>
+<span class="text-xl font-bold text-sky-700">
+Kuska Kallpa
+</span>
 
-    <!-- Social Media / Connectivity Section -->
-    <footer class="bg-white py-16 px-6 border-t border-gray-100">
-        <div class="max-w-7xl mx-auto flex flex-col items-center">
-            <div class="mb-10 text-center">
-                <img src='https://opal.google/board/blobs/eeff9783-0758-4871-9188-bb113326f132' alt='Kuska Kallpa Logo' class="h-16 mx-auto mb-6 opacity-80" />
-                <p class="text-darkGrey/50 font-display font-medium tracking-widest uppercase text-sm">Contáctanos y Síguenos</p>
-            </div>
-            
-            <div class="flex flex-wrap justify-center gap-6 md:gap-12">
-                <!-- Instagram -->
-                <a href="https://www.instagram.com" target="_blank" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-full bg-lightGrey flex items-center justify-center group-hover:bg-pastelBlue group-hover:text-white transition-all duration-300 text-darkGrey/60">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                    </div>
-                    <span class="font-display font-semibold text-darkGrey/70 group-hover:text-pastelBlue transition-colors">Instagram</span>
-                </a>
-                
-                <!-- Facebook -->
-                <a href="https://www.facebook.com" target="_blank" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-full bg-lightGrey flex items-center justify-center group-hover:bg-pastelBlue group-hover:text-white transition-all duration-300 text-darkGrey/60">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.324v-21.35c0-.732-.593-1.325-1.325-1.325z"/></svg>
-                    </div>
-                    <span class="font-display font-semibold text-darkGrey/70 group-hover:text-pastelBlue transition-colors">Facebook</span>
-                </a>
+</div>
 
-                <!-- WhatsApp -->
-                <a href="https://wa.me/your-number" target="_blank" class="flex items-center gap-3 group">
-                    <div class="w-12 h-12 rounded-full bg-lightGrey flex items-center justify-center group-hover:bg-pastelBlue group-hover:text-white transition-all duration-300 text-darkGrey/60">
-                        <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.438 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.301-.15-1.779-.879-2.053-.979-.275-.1-.475-.15-.675.15-.199.299-.775.979-.95 1.174-.175.195-.349.219-.65.069-.3-.15-1.269-.467-2.417-1.492-.892-.796-1.492-1.78-1.667-2.079-.175-.299-.018-.461.132-.609.134-.133.301-.35.451-.525.15-.175.201-.299.301-.499.1-.2.05-.375-.025-.525-.075-.15-.675-1.625-.925-2.225-.244-.583-.491-.503-.675-.512-.174-.008-.375-.01-.575-.01-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.116 3.232 5.125 4.534.715.311 1.275.497 1.711.635.717.227 1.369.195 1.885.118.575-.085 1.779-.725 2.029-1.425.25-.7.25-1.299.175-1.424-.076-.125-.276-.199-.576-.349z"/></svg>
-                    </div>
-                    <span class="font-display font-semibold text-darkGrey/70 group-hover:text-pastelBlue transition-colors">WhatsApp</span>
-                </a>
-            </div>
-        </div>
-    </footer>
+<nav class="hidden md:flex space-x-8">
 
-    <script>
-        // Smooth scroll implementation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
-        });
+<a href="#inicio" class="font-semibold hover:text-sky-600">
+Inicio
+</a>
 
-        // Sticky header background change on scroll
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.classList.add('py-2', 'shadow-md');
-                header.classList.remove('py-4', 'shadow-sm');
-            } else {
-                header.classList.add('py-4', 'shadow-sm');
-                header.classList.remove('py-2', 'shadow-md');
-            }
-        });
-    </script>
+<a href="#nosotros" class="font-semibold hover:text-sky-600">
+Nosotros
+</a>
+
+<a href="#mision" class="font-semibold hover:text-sky-600">
+Misión
+</a>
+
+<a href="#unete" class="bg-sky-600 text-white px-5 py-2 rounded-full font-semibold hover:bg-sky-700">
+Únete
+</a>
+
+</nav>
+
+</div>
+
+</header>
+
+<!-- HERO -->
+
+<section id="inicio" class="relative h-[90vh] flex items-center justify-center text-center">
+
+<div class="absolute inset-0">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=2071" class="w-full h-full object-cover">
+
+<div class="absolute inset-0 hero-overlay"></div>
+
+</div>
+
+<div class="relative z-10 text-white max-w-4xl px-6">
+
+<h1 class="text-4xl md:text-6xl font-bold mb-6">
+Apoyando a niños y jóvenes del Perú
+</h1>
+
+<p class="text-xl mb-8">
+Con unión y fuerza podemos lograrlo 🌼🤝
+</p>
+
+<a href="#nosotros" class="bg-white text-sky-700 px-8 py-4 rounded-xl font-bold hover:bg-sky-50">
+Conoce nuestra labor
+</a>
+
+</div>
+
+</section>
+
+<!-- NOSOTROS -->
+
+<section id="nosotros" class="py-24 bg-white">
+
+<div class="max-w-4xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-bold mb-8">
+Kuska Kallpa
+</h2>
+
+<p class="text-lg leading-relaxed">
+
+Kuska Kallpa significa <strong>"Fuerza de la Unidad"</strong>.  
+Somos una organización comprometida con apoyar a niños y jóvenes peruanos mediante educación, bienestar emocional y desarrollo social.
+
+</p>
+
+</div>
+
+</section>
+
+<!-- MISION -->
+
+<section id="mision" class="py-24 bg-sky-50">
+
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-6">
+
+<div class="bg-white p-10 rounded-3xl shadow">
+
+<h3 class="text-2xl font-bold mb-4">
+Nuestra Misión
+</h3>
+
+<p>
+Empoderar a los jóvenes del Perú mediante programas educativos y sociales que fortalezcan sus oportunidades de desarrollo.
+</p>
+
+</div>
+
+<div class="bg-sky-600 text-white p-10 rounded-3xl shadow">
+
+<h3 class="text-2xl font-bold mb-4">
+Nuestra Visión
+</h3>
+
+<p>
+Un Perú donde cada niño tenga oportunidades para crecer, aprender y alcanzar su máximo potencial.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- UNETE -->
+
+<section id="unete" class="py-24 bg-white">
+
+<div class="max-w-6xl mx-auto px-6 text-center">
+
+<h2 class="text-4xl font-bold mb-12">
+Únete a Nosotros
+</h2>
+
+<div class="grid md:grid-cols-4 gap-6">
+
+<div class="p-8 border rounded-3xl">
+🤝
+<h4 class="font-bold mt-2">Voluntariado</h4>
+</div>
+
+<div class="p-8 border rounded-3xl">
+🎁
+<h4 class="font-bold mt-2">Donaciones</h4>
+</div>
+
+<div class="p-8 border rounded-3xl">
+🏢
+<h4 class="font-bold mt-2">Alianzas</h4>
+</div>
+
+<div class="p-8 border rounded-3xl">
+📢
+<h4 class="font-bold mt-2">Difusión</h4>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- REDES -->
+
+<section class="py-20 bg-sky-700 text-white text-center">
+
+<h2 class="text-3xl font-bold mb-10">
+Conéctate con nuestra comunidad
+</h2>
+
+<div class="flex justify-center gap-12">
+
+<a href="https://www.instagram.com/kuska.kallpa/" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition">
+Instagram
+</a>
+
+<a href="https://www.facebook.com/profile.php?id=61587159247164" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition">
+Facebook
+</a>
+
+<a href="https://whatsapp.com/channel/0029Vb7qZnQ2Jl8Mq872qK2E" target="_blank" rel="noopener noreferrer" class="hover:scale-110 transition">
+WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+
+<footer class="py-12 text-center text-sm text-slate-500 bg-white border-t">
+
+© 2024 Kuska Kallpa  
+Juntos transformamos vidas.
+
+</footer>
+
+<script>
+
+/* Scroll suave solo para enlaces internos */
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+
+anchor.addEventListener('click',function(e){
+
+const target=document.querySelector(this.getAttribute('href'));
+
+if(target){
+
+e.preventDefault();
+
+target.scrollIntoView({behavior:'smooth'});
+
+}
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
-
