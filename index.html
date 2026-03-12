@@ -1,83 +1,92 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Kuska Kallpa</title>
 
-<!-- Tailwind -->
 <script src="https://cdn.tailwindcss.com"></script>
-
-<!-- Iconos -->
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <style>
-html{scroll-behavior:smooth}
 
-/* HERO con imagen + overlay */
+html{
+scroll-behavior:smooth;
+}
+
 .hero{
-  background:
-    linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)),
-    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1600&auto=format&fit=crop");
-  background-size:cover;
-  background-position:center;
+background: linear-gradient(120deg,#d1fae5,#a7f3d0);
+}
+
+.section-soft{
+background:#f0fdf4;
 }
 
 .card:hover{
-  transform:translateY(-6px);
-  transition:.3s;
+transform:translateY(-5px);
+transition:0.3s;
 }
 
 </style>
+
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-green-50">
 
 <!-- HEADER -->
-<header class="fixed top-0 left-0 right-0 bg-white shadow z-50">
+
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
 
 <div class="max-w-7xl mx-auto flex items-center justify-between px-6 h-16">
 
 <div class="flex items-center gap-3">
+
 <img src="logo.webp" class="h-10">
-<span class="font-bold text-green-700 text-lg">Kuska Kallpa</span>
+
+<span class="font-bold text-green-700 text-lg">
+Kuska Kallpa
+</span>
+
 </div>
 
-<nav class="space-x-6 text-sm font-semibold hidden md:block">
+<nav class="space-x-6 text-sm font-semibold">
 
 <a href="#inicio" class="hover:text-green-600">Inicio</a>
 <a href="#nosotros" class="hover:text-green-600">Nosotros</a>
 <a href="#programas" class="hover:text-green-600">Programas</a>
 <a href="#proyectos" class="hover:text-green-600">Proyectos</a>
-<a href="#equipo" class="hover:text-green-600">Equipo</a>
 <a href="#contacto" class="hover:text-green-600">Contacto</a>
 
 </nav>
 
 </div>
+
 </header>
 
 <!-- HERO -->
-<section id="inicio" class="hero text-white pt-40 pb-32 text-center">
 
-<h1 class="text-5xl md:text-6xl font-bold mb-6">
+<section id="inicio" class="hero pt-36 pb-28 text-center">
+
+<h1 class="text-5xl font-bold text-green-800 mb-6">
 Kuska Kallpa
 </h1>
 
-<p class="max-w-2xl mx-auto text-lg">
-Impulsando educación, cultura y liderazgo juvenil
-para construir una sociedad más justa y participativa.
+<p class="max-w-2xl mx-auto text-green-800 text-lg">
+Impulsando educación, liderazgo juvenil y proyectos sociales
+para transformar nuestras comunidades.
 </p>
 
 <div class="mt-10 flex justify-center gap-4">
 
 <a href="#contacto"
-class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold">
+class="bg-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700">
 Ser voluntario
 </a>
 
 <a href="#programas"
-class="bg-white text-green-700 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200">
+class="border border-green-600 text-green-700 px-6 py-3 rounded-lg hover:bg-green-100">
 Nuestros programas
 </a>
 
@@ -86,165 +95,173 @@ Nuestros programas
 </section>
 
 <!-- NOSOTROS -->
+
 <section id="nosotros" class="py-20 max-w-6xl mx-auto px-6 text-center">
 
-<h2 class="text-3xl font-bold mb-8">Sobre nosotros</h2>
+<h2 class="text-3xl font-bold text-green-800 mb-8">
+Sobre nosotros
+</h2>
 
-<p class="max-w-3xl mx-auto text-gray-600">
-Kuska Kallpa es una organización juvenil dedicada a fortalecer
-el liderazgo, la educación y el compromiso social de los jóvenes.
-A través de iniciativas académicas, culturales y comunitarias
-buscamos generar impacto positivo en la sociedad.
+<p class="max-w-3xl mx-auto text-gray-700">
+Kuska Kallpa es una organización juvenil que busca fortalecer
+el liderazgo, la educación y la participación social mediante
+proyectos académicos, culturales y comunitarios dirigidos a jóvenes.
 </p>
 
 </section>
 
 <!-- PROGRAMAS -->
-<section id="programas" class="bg-gray-100 py-20">
+
+<section id="programas" class="section-soft py-20">
 
 <div class="max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-12">
-Áreas de acción
+<h2 class="text-3xl font-bold text-green-800 text-center mb-12">
+Programas
 </h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="card bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-lg mb-3">Área Académica</h3>
-<p class="text-gray-600">
-Formación en STEM, letras y arte mediante talleres,
-mentorías y actividades educativas.
-</p>
-</div>
+<div class="bg-white p-6 rounded-xl shadow card">
 
-<div class="card bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-lg mb-3">Proyectos Sociales</h3>
-<p class="text-gray-600">
-Desarrollo de iniciativas que generan impacto positivo
-en comunidades y fomentan liderazgo juvenil.
-</p>
-</div>
+<h3 class="font-bold text-lg mb-2">
+Área Académica
+</h3>
 
-<div class="card bg-white p-6 rounded-xl shadow">
-<h3 class="font-bold text-lg mb-3">Comunicaciones</h3>
 <p class="text-gray-600">
-Difusión de conocimiento, oportunidades y proyectos
-dirigidos a jóvenes estudiantes.
+Formación en STEM, letras, arte y cultura mediante
+talleres y mentorías.
 </p>
-</div>
 
 </div>
+
+<div class="bg-white p-6 rounded-xl shadow card">
+
+<h3 class="font-bold text-lg mb-2">
+Proyectos Sociales
+</h3>
+
+<p class="text-gray-600">
+Iniciativas que generan impacto positivo en
+comunidades.
+</p>
+
 </div>
+
+<div class="bg-white p-6 rounded-xl shadow card">
+
+<h3 class="font-bold text-lg mb-2">
+Comunicaciones
+</h3>
+
+<p class="text-gray-600">
+Difusión de conocimiento y oportunidades
+para jóvenes.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
 </section>
 
 <!-- PROYECTOS -->
-<section id="proyectos" class="py-20 max-w-6xl mx-auto px-6">
 
-<h2 class="text-3xl font-bold text-center mb-12">
+<section id="proyectos" class="py-20">
+
+<div class="max-w-6xl mx-auto px-6">
+
+<h2 class="text-3xl font-bold text-green-800 text-center mb-12">
 Proyectos
 </h2>
 
 <div class="grid md:grid-cols-3 gap-8">
 
-<div class="card bg-white rounded-xl shadow overflow-hidden">
-<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=1200&auto=format&fit=crop">
-<div class="p-6">
-<h3 class="font-bold mb-2">Talleres educativos</h3>
-<p class="text-gray-600 text-sm">
-Espacios de aprendizaje para estudiantes en diversas áreas del conocimiento.
+<div class="bg-white rounded-xl shadow p-6 card">
+
+<h3 class="font-bold mb-2">
+Talleres educativos
+</h3>
+
+<p class="text-gray-600">
+Espacios de aprendizaje para estudiantes
+y jóvenes.
 </p>
-</div>
+
 </div>
 
-<div class="card bg-white rounded-xl shadow overflow-hidden">
-<img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop">
-<div class="p-6">
-<h3 class="font-bold mb-2">Voluntariado</h3>
-<p class="text-gray-600 text-sm">
-Programas de participación juvenil orientados al servicio comunitario.
+<div class="bg-white rounded-xl shadow p-6 card">
+
+<h3 class="font-bold mb-2">
+Voluntariado
+</h3>
+
+<p class="text-gray-600">
+Participación juvenil en proyectos
+comunitarios.
 </p>
-</div>
+
 </div>
 
-<div class="card bg-white rounded-xl shadow overflow-hidden">
-<img src="https://images.unsplash.com/photo-1515169067868-5387ec356754?q=80&w=1200&auto=format&fit=crop">
-<div class="p-6">
-<h3 class="font-bold mb-2">Eventos culturales</h3>
-<p class="text-gray-600 text-sm">
-Promoción del arte, la cultura y la identidad juvenil.
+<div class="bg-white rounded-xl shadow p-6 card">
+
+<h3 class="font-bold mb-2">
+Eventos culturales
+</h3>
+
+<p class="text-gray-600">
+Actividades que promueven arte,
+cultura y liderazgo.
 </p>
-</div>
-</div>
 
-</div>
-</section>
-
-<!-- EQUIPO -->
-<section id="equipo" class="bg-gray-100 py-20">
-
-<div class="max-w-6xl mx-auto px-6 text-center">
-
-<h2 class="text-3xl font-bold mb-12">
-Nuestro equipo
-</h2>
-
-<div class="grid md:grid-cols-3 gap-8">
-
-<div class="card bg-white p-6 rounded-xl shadow">
-<img src="https://i.pravatar.cc/150?img=5" class="mx-auto rounded-full mb-4">
-<h3 class="font-bold">Coordinador General</h3>
-<p class="text-gray-500 text-sm">Kuska Kallpa</p>
-</div>
-
-<div class="card bg-white p-6 rounded-xl shadow">
-<img src="https://i.pravatar.cc/150?img=12" class="mx-auto rounded-full mb-4">
-<h3 class="font-bold">Área Académica</h3>
-<p class="text-gray-500 text-sm">Coordinación</p>
-</div>
-
-<div class="card bg-white p-6 rounded-xl shadow">
-<img src="https://i.pravatar.cc/150?img=20" class="mx-auto rounded-full mb-4">
-<h3 class="font-bold">Comunicaciones</h3>
-<p class="text-gray-500 text-sm">Equipo creativo</p>
 </div>
 
 </div>
 
 </div>
+
 </section>
 
 <!-- CONTACTO -->
-<section id="contacto" class="py-20 text-center">
 
-<h2 class="text-3xl font-bold mb-6">
-Síguenos en nuestras redes
+<section id="contacto" class="section-soft py-20 text-center">
+
+<h2 class="text-3xl font-bold text-green-800 mb-6">
+Síguenos
 </h2>
 
 <p class="text-gray-600 mb-10">
-Mantente conectado con nuestras actividades.
+Mantente al tanto de nuestras actividades
 </p>
 
 <div class="flex justify-center gap-10">
 
 <a href="https://www.instagram.com/kuska.kallpa/" target="_blank"
-class="flex flex-col items-center hover:text-pink-600">
+class="flex flex-col items-center hover:text-pink-500">
+
 <i data-lucide="instagram" class="w-10 h-10"></i>
 <span class="text-sm mt-2">Instagram</span>
+
 </a>
 
 <a href="https://www.facebook.com/profile.php?id=61587159247164"
 target="_blank"
 class="flex flex-col items-center hover:text-blue-600">
+
 <i data-lucide="facebook" class="w-10 h-10"></i>
 <span class="text-sm mt-2">Facebook</span>
+
 </a>
 
 <a href="https://whatsapp.com/channel/0029Vb7qZnQ2Jl8Mq872qK2E"
 target="_blank"
 class="flex flex-col items-center hover:text-green-600">
+
 <i data-lucide="message-circle" class="w-10 h-10"></i>
 <span class="text-sm mt-2">WhatsApp</span>
+
 </a>
 
 </div>
@@ -252,8 +269,13 @@ class="flex flex-col items-center hover:text-green-600">
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-gray-900 text-white text-center py-6">
+
+<footer class="bg-green-900 text-white text-center py-6">
+
+<p>
 © 2026 Kuska Kallpa
+</p>
+
 </footer>
 
 <script>
@@ -261,4 +283,5 @@ lucide.createIcons();
 </script>
 
 </body>
+
 </html>
