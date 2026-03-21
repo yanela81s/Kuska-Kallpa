@@ -18,6 +18,7 @@
                         darkGrey: '#333333',
                         lightGrey: '#F8F8F8',
                         accentBlue: '#8FAADC',
+                        goldAccent: '#D4AF37', // Color para reconocimientos
                     },
                     fontFamily: {
                         sans: ['Roboto', 'sans-serif'],
@@ -48,7 +49,7 @@
             border: 1px solid rgba(255, 255, 255, 0.3);
         }
         .hero-gradient {
-            background: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.6));
+            background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
         }
         .section-curve {
             clip-path: ellipse(150% 100% at 50% 100%);
@@ -58,6 +59,10 @@
             color: #333333;
             overflow-x: hidden;
         }
+        /* Ajuste de lectura para el Hero */
+        .hero-title {
+            text-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
     </style>
 </head>
 <body class="antialiased">
@@ -65,7 +70,7 @@
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="h-12 md:h-16 flex items-center">
-                <img src='https://opal.google/board/blobs/eeff9783-0758-4871-9188-bb113326f132' alt='Kuska Kallpa Logo' class="h-full w-auto object-contain hover:scale-105 transition-transform duration-300" />
+                <img src="logo.webp" alt="Kuska Kallpa Logo" class="h-full w-auto object-contain hover:scale-105 transition-transform duration-300" />
             </div>
             <div class="hidden md:block">
                 <span class="text-pastelBlue font-display font-semibold text-sm tracking-widest uppercase">Unión • Fuerza • Compromiso</span>
@@ -75,18 +80,18 @@
 
     <section class="relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img src='https://opal.google/board/blobs/7f1f9329-5af8-471b-b223-16d10a94f8a1' alt='Hero Unity' class="w-full h-full object-cover" />
+            <img src="portada.png" alt="Niños peruanos estudiando juntos en Kuska Kallpa" class="w-full h-full object-cover" />
             <div class="absolute inset-0 hero-gradient"></div>
         </div>
 
         <div class="relative z-10 max-w-4xl px-6 text-center animate-fade-in-up">
-            <h1 class="text-4xl md:text-6xl lg:text-7xl font-display font-extrabold text-white leading-tight mb-8 drop-shadow-lg">
+            <h1 class="text-4xl md:text-6xl lg:text-7xl hero-title font-display font-extrabold text-white leading-tight mb-8">
                 ¡Bienvenidos!
             </h1>
-            <p class="text-xl md:text-3xl font-light text-white/95 leading-relaxed mb-10 max-w-3xl mx-auto drop-shadow-md">
-                En <span class="font-bold text-softBlue">Kuska Kallpa</span> estamos comprometidos con apoyar a los niños y jóvenes peruanos. 
+            <p class="text-xl md:text-3xl font-light text-white leading-relaxed mb-10 max-w-3xl mx-auto hero-title">
+                En Kuska Kallpa estamos comprometidos con apoyar a los niños y jóvenes peruanos. 
                 <br class="hidden md:block" /> 
-                <span class="italic">Con unión y fuerza podemos lograrlo 🌼🤝🏻</span>
+                <span class="italic font-normal">Con unión y fuerza podemos lograrlo 🌼🤝🏻</span>
             </p>
             <div class="flex justify-center animate-float">
                 <a href="#contenido" class="bg-pastelBlue hover:bg-accentBlue text-white px-8 py-4 rounded-full font-display font-bold transition-all duration-300 shadow-xl hover:shadow-2xl">
@@ -188,6 +193,30 @@
                 </div>
             </div>
 
+            <div class="mb-24 bg-white p-10 md:p-16 rounded-3xl shadow-sm border border-goldAccent/10">
+                <div class="grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
+                    <div class="md:col-span-3 flex justify-center md:justify-start">
+                        <div class="w-32 h-32 md:w-40 md:h-40 bg-goldAccent/10 rounded-full flex items-center justify-center text-center p-4 border-2 border-dashed border-goldAccent/20">
+                            <span class="text-6xl md:text-7xl">🇵🇪</span>
+                        </div>
+                    </div>
+                    <div class="md:col-span-9">
+                        <h2 class="text-goldAccent font-display font-bold text-lg tracking-widest uppercase mb-4 flex items-center gap-3">
+                            <span class="text-2xl">🏆</span> Reconocimiento Institucional
+                        </h2>
+                        <h3 class="text-3xl md:text-4xl font-display font-bold text-darkGrey mb-6 leading-tight">
+                            Acreditación Oficial
+                        </h3>
+                        <p class="text-xl text-darkGrey/90 leading-relaxed mb-4">
+                            En Kuska Kallpa nos enorgullece comunicar que estamos <strong class="text-goldAccent">oficialmente reconocidos por la Secretaría Nacional de la Juventud (SENAJU)</strong>.
+                        </p>
+                        <p class="text-lg text-darkGrey/70 leading-relaxed italic">
+                            Este respaldo avala nuestro compromiso y la transparencia de nuestras acciones en beneficio de la juventud peruana.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
             <div class="text-center max-w-3xl mx-auto mb-20">
                 <h2 class="text-3xl md:text-5xl font-display font-bold text-darkGrey mb-6">Sé Parte del Cambio</h2>
                 <p class="text-xl text-darkGrey/70 leading-relaxed mb-10">
@@ -205,7 +234,7 @@
     <footer class="bg-white py-16 px-6 border-t border-gray-100">
         <div class="max-w-7xl mx-auto flex flex-col items-center">
             <div class="mb-10 text-center">
-                <img src='https://opal.google/board/blobs/eeff9783-0758-4871-9188-bb113326f132' alt='Kuska Kallpa Logo' class="h-16 mx-auto mb-6 opacity-80" />
+                <img src="logo.webp" alt="Kuska Kallpa Logo" class="h-16 mx-auto mb-6 opacity-80" />
                 <p class="text-darkGrey/50 font-display font-medium tracking-widest uppercase text-sm">Contáctanos y Síguenos</p>
             </div>
             
